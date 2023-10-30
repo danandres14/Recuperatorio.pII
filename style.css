@@ -1,0 +1,149 @@
+body {
+    margin-bottom: 100px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    
+    min-height: 100vh; /* Asegura que el cuerpo de la página ocupe al menos la altura de la ventana. */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #3ebc14;
+    color: #fff;
+    overflow: hidden;
+    
+   
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.brand {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-open .nav-links {
+        display: flex;
+    }
+}
+
+body .container1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    max-width: 600px; /* Ajusta el ancho del contenedor según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+}
+
+body .container2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    max-width: 600px; /* Ajusta el ancho del contenedor según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+body .container3 {
+    text-align: center; /* Centra el texto horizontalmente */
+    max-width: 600px; /* Ajusta el ancho del contenedor según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body .container4 {
+    padding: 1%;
+    text-align: center; /* Centra el texto horizontalmente */
+    max-width: 600px; /* Ajusta el ancho del contenedor según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+body .container5 {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.item {
+    text-align: center;
+    flex: 1;
+    
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 1px;
+    /* Si deseas que el footer esté fijo en la parte inferior, puedes usar position: fixed. */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 45.25%; /* Establece el tamaño de aspecto del video (16:9) */
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 10%
+    
+}

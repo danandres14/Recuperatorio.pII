@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Consulta</title>
+    <link rel="stylesheet" href="stylecontacto.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Consulta</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ir a Página principal</a></li>
+                <li><a href="desarrollo.html">Ir a Página informativa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="procesar_formulario.php" method="post">
+            <div class="formulario-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            
+
+            <div class="formulario-group">
+                <label>Género:</label>
+                <input type="radio" id="masculino" name="genero" value="Masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino" name="genero" value="Femenino">
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="otro" name="genero" value="Otro">
+                <label for="otro">Otro</label>
+            </div>
+
+            
+            <div class="formulario-group">
+                <label>Disciplinas:</label>
+                <input type="checkbox" id="disciplina1" name="disciplinas[]" value="Disciplina 1">
+                <label for="disciplina1">REIKI</label>
+                <input type="checkbox" id="disciplina2" name="disciplinas[]" value="Disciplina 2">
+                <label for="disciplina2">ACUPUNTURA</label>
+                <input type="checkbox" id="disciplina3" name="disciplinas[]" value="Disciplina 3">
+                <label for="disciplina3">AROMATERAPIA</label>
+            </div>
+
+            <div class="formulario-group">
+                <label for="opciones">Selecciona una disciplina:</label>
+                <input list="disciplinas" id="opciones" name="seleccion" required>
+                <datalist id="disciplinas">
+                    <option value="REIKI">
+                    <option value="ACUPUNTURA">
+                    <option value="AROMATERAPIA">
+                </datalist>
+            </div>
+
+            <div class="formulario-group">
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
+            </div>
+
+            <div class="formulario-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+
+    
+</body>
+
+<footer>
+    <p>© 2023 Daniel Andres Lopez</p>
+</footer>
+</html>
